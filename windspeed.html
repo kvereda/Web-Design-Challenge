@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> City Weather Summary-Wind Speed Data Analysis</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--Navigation bar-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>     
+            
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Visualization Menu
+                    </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="temperature.html">Temperature</a>
+                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                </a>
+            </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cities.html">Data</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div class="container content">    
+        <div class="row">
+            <div class="col-md-8">
+                <div class="col-md-12">
+                    <h1>City Weather Summary</h1>
+                    <h3>City Latitude vs Wind Speed </h3>
+                    <hr>
+                    <div class="thumbnail">
+                        <img class="img-thumbnail float-left" src="Resources/assets/images/Fig4.png " width="100%" alt="wind speed">
+                    </div>
+                    <p>The above plot shows no correlation between city latitude and wind speed.</p> 
+                    <p>According to National Geographic's website "Differences in atmospheric pressure generate winds. At the Equator, the sun warms the water and land more than it does the rest of the globe. Warm equatorial air rises higher into the atmosphere and migrates toward the poles. This is a low-pressure system. At the same time, cooler, denser air moves over Earth’s surface toward the Equator to replace the heated air. This is a high-pressure system. Winds generally blow from high-pressure areas to low-pressure areas.."(National Geographic.org, N.A)</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <h3>Weather Scatter Plots</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-3 col-md-6">
+                            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%"  alt="cloudiness"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="temp.html"><img src="Resources/assets/images/Fig1.png" width="100%"  alt="temperature">
+                            </a> 
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png"width="100%"  alt="wind speed"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
